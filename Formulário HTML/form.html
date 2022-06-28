@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="Utf-8">
+		<link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/4257/4257487.png">
+		<title> Formulário System </title>
+		<style>
+			body{
+				background-color: black;
+			}
+			.cadastro{
+				display: flex;
+				position: center;
+				text-align: center;
+				color: white;
+				background-color: #696969;
+				width: 30%;
+				height: 80%;
+				border-radius: 30px;
+				padding: 5% 5%;
+				margin-top: 2%;
+				margin-left: 30%;
+			}
+
+
+			.form{
+				width: 200%;
+				border-radius: 8px;
+				height: 30px;
+			}
+
+			.camp{
+				position: center;
+				text-align: center;
+				width: 100%;
+				margin-left: 20%;
+			}
+
+			.buttonE{
+				border-radius: 15px;
+				width: 200%;
+				height: 30px;
+				margin-left: 25%;
+				background-color: #0000FF;
+				color: white;
+			}
+
+			.buttonR{
+				border-radius: 15px;
+				width: 200%;
+				height: 30px;
+				margin-left: 25%;
+				background-color: #FF0000;
+				color: white;
+			}
+
+			.title{
+				font-family: "Palatino", serif;
+  				letter-spacing: 1px;
+  				align-items: flex-start;
+			}
+
+			/* ---- RODAPÉ SESSION ---- */
+
+#rodape{
+	background-color: black;
+	bottom: 0;
+  position: relative;
+  width: 101%;
+  height: 15%;
+  margin-left: -8px;
+}
+
+.container{
+	display: inline-flex;
+	width: 100%;
+}
+
+.name{
+	color: white;
+	position: left;
+	margin-left: 3%;
+	width: 35%;
+	margin-top: 1%
+}
+
+.whats{
+	position: center;
+	text-align: center;
+	width: 60%
+}
+
+.leg_music{
+	color: white;
+}
+
+.www {
+	width: 50px;
+	height: 50px;
+}
+
+.redes_sociais{
+	position: right;
+	text-align: right;
+	margin: 2%;
+	width: 35%
+}
+
+.red {
+	width: 30px;
+	height: 30px;
+}
+		</style>
+	</head>
+	<body>
+		<div class="cadastro">
+		<form>
+    	<div class="camp">
+        	<label for="nome" class="title">Nome:</label><br>
+        	<input type="text" id="nome" class="form" placeholder="Yan de Oliveira" required /><br><br>
+        	<label for="email" class="title">E-mail:</label><br>
+        	<input type="email" id="email" class="form" placeholder="yan.oliveira@ifgoiano.edu.br" required /><br><br>
+        	<label for="pass" class="title">Informe uma senha:</label><br>
+        	<input type="password" id="pass" class="form" placeholder="******" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Deve ter: *Ninimo 8 digitos *Uma letra maiuscula e uma minuscula *Número" required/><br><br>
+        	<lable for="gener" class="title">Genero:</lable><br>
+        	<input type="radio" id="M" name="fav_language" value="M">
+  			<label for="M">M</label>
+  			<input type="radio" id="F" name="fav_language" value="F">
+  			<label for="F">F</label>
+  			<input type="radio" id="other" name="fav_language" value="Other">
+  			<label for="other" >Other</label><br><br>
+        	<label for="date" class="title">Data cadastro:</label><br>
+        	<input type="datetime-local" id="date" class="form"/><br><br>
+        </div>
+    	<br>
+    		<input type="submit" value="Enviar" class="buttonE" target="_blank" onclick="alert('Dados Enviados!')">
+    	<br><br>
+  		<input type="reset" class="buttonR" onclick="alert('Itens excluídos! Preencha novamente!')">
+		</form>
+		</div>
+		<footer id="rodape">
+			<div class="container">
+				<!-- **** Nome **** -->
+				<div class="name">
+					<h4>@YanOliveira🙃</h4>
+				</div>
+
+				<!-- **** Motivo/Música **** -->
+				<div class="whats">
+					<figure>
+						<a href="https://youtu.be/E4z2maqqUm0">
+							<img class="www" src="https://thumbs.gfycat.com/MindlessWelltodoCrossbill-max-1mb.gif">
+						</a>
+					</figure>
+				</div>
+
+				<!-- **** Redes Sociais **** -->
+				<div class="redes_sociais">
+					<!-- Instagram -->
+					<a href="https://www.instagram.com/_yan.oliveira.gm/">
+						<img class="red" src="https://www.itabirito.mg.leg.br/imagens/insta.png/image">
+					</a>
+					<!-- Facebook -->
+					<a href="https://www.facebook.com/yan.oliveira11.gm/">
+						<img class="red" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1365px-Facebook_f_logo_%282019%29.svg.png">
+					</a> 
+					<!-- LinkedIn -->
+					<a href="https://www.linkedin.com/in/yan-de-oliveira-a2886619a/">
+						<img class="red" src="https://cdn-icons-png.flaticon.com/512/174/174857.png">
+					</a>
+					<!-- GitHub -->
+					<a href="https://github.com/Yan-Oliv">
+						<img class="red" src="https://icones.pro/wp-content/uploads/2021/06/icone-github-grise.png">
+					</a> 
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
